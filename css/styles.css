@@ -1,0 +1,85 @@
+:root{
+    --primary-color: #212121;
+    --secondary-color: #757575;
+    --white-color: #fff;
+    --focus-hover-color: #2196F3;
+    --background-color: #2F303A;
+}
+
+body{
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid red;
+    padding: 0 15px;
+}
+
+.contacts,
+.page-nav,
+.nav-list,
+.header-container{
+    display: flex;
+}
+
+.header-container{
+    justify-content: space-between;
+}
+
+.page-nav{
+    align-items: center;
+}
+
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: #2196F3;
+    margin-right: 93px;
+}
+
+.logo-text-black{
+    color:  black;
+}
+
+.logo-text-white{
+    color: white;
+}
+
+.nav-links-item + .nav-links-item {
+    margin-left: 50px;
+}
+
+.contacts-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contacts-list-link,
+.nav-links-link{
+    padding: 31px 0;
+    display: block;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.contacts-list-link{
+    color: var(--secondary-color);
+}
+
+.contacts-list-link:focus,
+.nav-links-link:focus,
+.contacts-list-link:hover,
+.nav-links-link:hover{
+color: var(--focus-hover-color);
+}
+
+.footer-container{
+    background: var(--background-color);
+}
